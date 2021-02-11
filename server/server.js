@@ -9,8 +9,6 @@ app.use(express.static('client'));
 
 app.use(express.json());
 
-app.use(express.static('client'))
-
 app.use('/api', apiRouter);
 
 app.get('/', (req, res) => {
